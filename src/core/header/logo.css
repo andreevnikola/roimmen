@@ -1,0 +1,32 @@
+img{
+    width: 190px;
+    padding: 5px;
+    padding-top: -3px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#pages{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+#pages div{
+    border: 2px solid #eae517;
+    border-radius: 5px;
+    padding: 2px;
+    height: fit-content;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#pages div#reg{
+    margin-right: 10px;
+}
+/* #pages div#log{
+    border: 2px solid #eae517;
+    border-radius: 5px;
+} */
