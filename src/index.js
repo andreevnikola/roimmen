@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import HomePage from './components/pages/home-page/index';
 import Logo_img from './core/header/logo';
 import reportWebVitals from './reportWebVitals';
 
@@ -9,7 +8,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Logo_img />
-    <HomePage />
   </React.StrictMode>
 );
 
