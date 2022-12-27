@@ -2,12 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Logo_img from './core/header/logo';
+import Home from './components/Home/home';
+import Auth from './components/Auth/auth';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Logo_img />
+    <Router>
+      <Logo_img />
+      <Routes>
+        <Route exact path='/' element={< Home />}></Route>
+        <Route exact path='/authenticate' element={<Auth />}></Route>
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
